@@ -1,2 +1,4 @@
 raw_data/
 *.csv.gz
+
+large_clean_data/
