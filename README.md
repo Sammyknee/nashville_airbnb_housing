@@ -6,6 +6,9 @@
 
 **Author**: Samantha Knee
 
+[**Dashboard Link**](https://nash-airbnb-app.herokuapp.com/)
+
+
 ## Overview
 
 The city of Nashville, TN has experienced explosive growth in the last 10 years, marked by hundreds of new apartment buildings and hotel development, new company headquarters from the likes of Amazon, and sharp increases in home prices. As Nashville becomes not only a more popular place to live but also a popular place to vacation, the presence of Airbnb has exploded as well, increasing from around 2,000 airbnbs in 2015 to over 6,000 today. As this city changes, I wanted to explore the relationship between the growth in home prices and the growth in Airbnb, and whether the growing popularity as a tourist city has had a negative effect on residents.
@@ -117,21 +120,27 @@ The features the XGBoost model found to be most important in determining whether
 
 ## For More Information
 
-Please review the following notebooks in the repository for [initial EDA], [additional pre-model cleaning], [regression models], [time series models] and [classification models]. Please also review this [presentation] and visit [this site] to see an interactive dashboard of my findings.
+Please review the following notebooks in the repository for [initial EDA](./initial_EDA.ipynb), [additional pre-model cleaning](./Pre_Model_Cleaning.ipynb), [regression models](./Regression_Models.ipynb), [time series models](./Time_Series_Models.ipynb) and [classification models](./Classification_Models.ipynb). Please also review this [presentation](./nashville_airbnb_housing_presentation.pdf) and visit [this site](https://nash-airbnb-app.herokuapp.com/) to see an interactive dashboard of my findings.
 
-Please review the EDA in this [Jupyter Notebook](./Housing%20Data%20-%20EDA.ipynb), the full modeling analysis in this [Jupyter Notebook](./Housing%20Data%20-%20Modeling.ipynb), and this [presentation](./House_Price_Analysis_Presentation.pdf).
 
 For any additional questions, please contact **Samantha Knee at samanthaknee24@gmail.com**
 
 
-## Repository Structure UPDATE THIS
+## Repository Structure 
 
 
 ```
-├── README.md                                 <- The top-level README for reviewers of this project
-├── Housing Data - EDA.ipynb                  <- Narrative documentation of data cleaning in Jupyter notebook
-├── Housing Data - Modeling.ipynb             <- Narrative documentation of analysis in Jupyter notebook
-├── House_Price_Analysis_Presentation.pdf     <- PDF version of project presentation
-├── data                                      <- Both sourced externally and generated from code
-└── images                                    <- Both sourced externally and generated from code
+├── README.md                                         <- The top-level README for reviewers of this project
+├── initial_EDA.ipynb                                 <- Narrative documentation of initial data cleaning and EDA in Jupyter notebook
+├── Pre_Model_Cleaning.ipynb                          <- Narrative documentation of additional data cleaning and EDA in Jupyter notebook
+├── Regression_Models.ipynb                           <- Narrative documentation of regression analysis in Jupyter notebook
+├── Time_Series_Models.ipynb                          <- Narrative documentation of time series analysis in Jupyter notebook
+├── Classification_Models.ipynb                       <- Narrative documentation of classification analysis in Jupyter notebook
+├── gradient_boost.pickle                             <- final gradient boost model
+├── knn.pickle                                        <- final k-nearest neighbors model
+├── random_forest.pickle                              <- final random forest model
+├── xg_boost.pickle                                   <- final XGBoost model
+├── nashville_airbnb_housing_presentation.pdf.pdf     <- PDF version of project presentation
+├── cleaned_data                                      <- Cleaned data generated from code
+└── images                                            <- Both sourced externally and generated from code
 ```
