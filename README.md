@@ -30,6 +30,9 @@ I found my data for Airbnb from [Inside Airbnb](http://insideairbnb.com/index.ht
 
 I found the data on home values in Nashville from [Zillow](https://www.zillow.com/research/data/). I used the Zillow Home Value Index (ZHVI) for each zipcode and the typical home value in the Nashville MSA. The ZHVI is calculated by measuring monthly changes in property-level Zestimates. Zillow has this data going back to 1996 for most zipcodes, with some zipcode data starting in 2005.
 
+*Representation of Airbnbs in Nashville*
+![Airbnbs](./images/folium_map.png)
+
 ***
 
 ## Methods
