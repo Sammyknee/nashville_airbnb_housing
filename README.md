@@ -11,7 +11,7 @@
 
 ## Overview
 
-The city of Nashville, TN has experienced explosive growth in the last 10 years, marked by hundreds of new apartment buildings and hotel development, new company headquarters from the likes of Amazon, and sharp increases in home prices. As Nashville becomes not only a more popular place to live but also a popular place to vacation, the presence of Airbnb has exploded as well, increasing from around 2,000 airbnbs in 2015 to over 6,000 today. As this city changes, I wanted to explore the relationship between the growth in home prices and the growth in Airbnb, and whether the growing popularity as a tourist city has had a negative effect on residents.
+The city of Nashville, TN has experienced explosive growth in the last 10 years, marked by hundreds of new apartment buildings and hotel development, new company headquarters, and sharp increases in home prices. As Nashville becomes not only a more popular place to live but also a popular place to vacation, the presence of Airbnb has exploded as well, increasing from around 2,000 Airbnbs in 2015 to over 6,000 today. As this city changes, I wanted to explore the relationship between the growth in home prices and the growth in Airbnb, and whether the growing popularity as a tourist city has had a negative effect on residents.
 
 ***
 
@@ -50,7 +50,7 @@ After one-hot encoding any categorical variables, I created two main DataFrames 
 
 The purpose of the regression analysis is to determine if there is a significant relationship between the average home value and the qualities of the Airbnbs, including where the airbnbs are located, the average price, the average number of beds, and the average number of reviews on each property.
 
-After I explored the correlation between many of the features of the Airbnb’s, I performed stepwise selection with a subset of features that were found to be highly correlated to the average home value. I checked my results against a baseline simple regression model using the average number of reviews on an Airbnb as the predictor. I also checked that the assumptions of linear regression were met for the models.
+After I explored the correlation between the many features of the Airbnbs, I performed stepwise selection to choose a subset of features to use in the model with signficant p-values. I checked my results against a baseline simple regression model using the average number of people accommodated in an Airbnb as the predictor. I also checked that the assumptions of linear regression were met for the models.
 
 ![correlation](./images/corr_heatmap.png)
 
@@ -74,16 +74,16 @@ I iterated through several classification models to see which model could best c
 
 ### Regression: Is there a signficant relationship between home values and Airbnbs?
 
-In the final regression model, we found the average number of beds, average number of reviews, number of Superhosts and number of Airbnbs in North Nashville had a significant relationship with the average home value.
+In the final regression model, we found the average number of beds, average number of reviews and Airbnb price had a significant relationship with the average home value.
 
 ![regression](./images/reg_subplots.png)
 ![coefficients](./images/reg_coefs.png)
 
-The largest effect on home value came from the number of beds—an increase in the average number of beds by 1 causes a $35k increase in home value. This could be because as Airbnb’s become larger and can fit more people, the more valuable the average home becomes to an Airbnb owner.
+The largest effect on home value came from the number of beds—an increase in the average number of beds by 1 causes a $34k increase in home value. This could be because as Airbnb’s become larger and can fit more people, the more valuable the average home becomes to an Airbnb owner.
 
 ### Time Series: Can we predict future average home values?
 
-Based on AIC values, the best performing model was a SARIMA model with order of (1,1,1) and seasonal order of (1,1,1,12). Using exogenous parameters did not improve our predictions.
+Based on AIC values, the best performing SARIMA model had an order of (1,1,1) and seasonal order of (1,1,1,12). Using exogenous parameters in the SARIMAX model improved our predictions slightly, but we used the simpler SARIMA model to make future predictions.
 
 ![forecast](./images/ts_forecast.png)
 
