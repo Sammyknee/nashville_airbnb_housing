@@ -120,7 +120,7 @@ The features the XGBoost model found to be most important in determining whether
 
 ## For More Information
 
-Please review the following notebooks in the repository for [initial EDA](./initial_EDA.ipynb), [additional pre-model cleaning](./Pre_Model_Cleaning.ipynb), [regression models](./Regression_Models.ipynb), [time series models](./Time_Series_Models.ipynb) and [classification models](./Classification_Models.ipynb). Please also review this [presentation](./nashville_airbnb_housing_presentation.pdf) and visit [this site](https://nash-airbnb-app.herokuapp.com/) to see an interactive dashboard of my findings.
+Please review the following notebooks in the repository for [initial EDA](./notebooks/initial_EDA.ipynb), [additional pre-model cleaning](./notebooks/Pre_Model_Cleaning.ipynb), [regression models](./notebooks/Regression_Models.ipynb), [time series models](./notebooks/Time_Series_Models.ipynb) and [classification models](./notebooks/Classification_Models.ipynb). Please also review this [presentation](./nashville_airbnb_housing_presentation.pdf) and visit [this site](https://nash-airbnb-app.herokuapp.com/) to see an interactive dashboard of my findings.
 
 
 For any additional questions, please contact **Samantha Knee at samanthaknee24@gmail.com**
