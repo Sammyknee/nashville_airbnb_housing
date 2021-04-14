@@ -93,7 +93,7 @@ The model that had the least overfitting was the K-Nearest Neighbors model. Howe
 
 ![evalmetrics](./images/class_metrics.png)
 
-The final XGBoost model had an accuracy score of 0.78, a precision score of 0.81, a recall score of 0.82 and an F1 score of 0.80.
+The final XGBoost model had an accuracy score of 0.78, a precision score of 0.81, a recall score of 0.83 and an F1 score of 0.80.
 
 ![confmatrix](./images/conf_matrix.png)
 ![importantfeatures](./images/feature_importance.png)
@@ -130,17 +130,10 @@ For any additional questions, please contact **Samantha Knee at samanthaknee24@g
 
 
 ```
-├── README.md                                         <- The top-level README for reviewers of this project
-├── initial_EDA.ipynb                                 <- Narrative documentation of initial data cleaning and EDA in Jupyter notebook
-├── Pre_Model_Cleaning.ipynb                          <- Narrative documentation of additional data cleaning and EDA in Jupyter notebook
-├── Regression_Models.ipynb                           <- Narrative documentation of regression analysis in Jupyter notebook
-├── Time_Series_Models.ipynb                          <- Narrative documentation of time series analysis in Jupyter notebook
-├── Classification_Models.ipynb                       <- Narrative documentation of classification analysis in Jupyter notebook
-├── gradient_boost.pickle                             <- final gradient boost model
-├── knn.pickle                                        <- final k-nearest neighbors model
-├── random_forest.pickle                              <- final random forest model
-├── xg_boost.pickle                                   <- final XGBoost model
-├── nashville_airbnb_housing_presentation.pdf.pdf     <- PDF version of project presentation
-├── cleaned_data                                      <- Cleaned data generated from code
-└── images                                            <- Both sourced externally and generated from code
+├── README.md                                     <- The top-level README for reviewers of this project
+├── notebooks                                     <- Jupyter notebooks containing cleaning, EDA and modeling analyses
+├── models                                        <- final classification models
+├── nashville_airbnb_housing_presentation.pdf     <- PDF version of project presentation
+├── cleaned_data                                  <- Cleaned data generated from code
+└── images                                        <- Both sourced externally and generated from code
 ```
